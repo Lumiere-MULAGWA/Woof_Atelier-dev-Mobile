@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
+
 package com.example.woof
 
 import android.os.Bundle
@@ -127,7 +129,7 @@ fun DogIcon(
 }
 
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun WoofTopAppBar(modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
@@ -152,7 +154,6 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
-
 
 
 /**
@@ -189,7 +190,7 @@ fun DogInformation(
 @Preview
 @Composable
 fun WoofPreview() {
-    WoofTheme(darkTheme = false) {
+    WoofTheme(darkTheme = true) {
         WoofApp()
     }
 }
